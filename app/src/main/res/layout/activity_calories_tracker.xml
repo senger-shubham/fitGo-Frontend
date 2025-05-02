@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories Tracker"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Input Section -->
+    <EditText
+        android:id="@+id/etCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:hint="Enter Calories"
+        android:textColorHint="@color/gray"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnAddCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Calories"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"/>
+
+    <!-- Total Calories -->
+    <TextView
+        android:id="@+id/tvTotalCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Calories: 0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp" />
+
+    <!-- Calorie Recommendation -->
+    <TextView
+        android:id="@+id/tvCalorieRecommendation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recommended Calories: 2000"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="@color/gray"
+        android:layout_marginTop="8dp" />
+
+    <!-- RecyclerView for calorie logs -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:overScrollMode="never" />
+
+    <!-- Delete All Entries Button -->
+    <Button
+        android:id="@+id/btnDeleteAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete All Entries"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBarCalories"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:progress="0"
+        android:max="2000"
+        android:progressTint="@color/green"
+        android:backgroundTint="@color/gray"
+        android:layout_marginTop="16dp"/>
+
+    <!-- View Progress Button -->
+    <Button
+        android:id="@+id/btnProgressStates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Progress"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

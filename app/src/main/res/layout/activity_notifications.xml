@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Workout Reminder Switch -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Workout Reminder"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <Switch
+            android:id="@+id/switch_workout_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout Reminder" />
+
+        <!-- Workout Time -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout Reminder Time"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_workout_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not set"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_set_workout_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Workout Time" />
+
+        <!-- Calorie Reminder Switch -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Calorie Reminder"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp" />
+
+        <Switch
+            android:id="@+id/switch_calorie_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calorie Reminder" />
+
+        <!-- Calorie Time -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calorie Reminder Time"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_calorie_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not set"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_set_calorie_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Calorie Time" />
+
+    </LinearLayout>
+</ScrollView>
