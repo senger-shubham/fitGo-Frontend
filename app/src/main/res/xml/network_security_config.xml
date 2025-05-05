@@ -2,6 +2,6 @@
 <network-security-config>
     <!-- Allow cleartext (HTTP) traffic to specific domain (e.g., 192.168.29.95) -->
     <domain-config cleartextTrafficPermitted="true">
-        <domain includeSubdomains="true">192.168.29.95</domain>
+        <domain includeSubdomains="true">192.168.95.38</domain>
     </domain-config>
 </network-security-config>

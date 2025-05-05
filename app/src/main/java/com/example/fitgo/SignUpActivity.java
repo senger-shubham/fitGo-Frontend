@@ -15,7 +15,7 @@ public class SignUpActivity extends AppCompatActivity {
     EditText fullNameET, emailET, usernameET, passwordET, confirmPasswordET;
     Button signUpBtn;
 
-    String signupUrl = "http://192.168.29.95:8080/api/auth/register";  // replace with your backend URL
+    String signupUrl = "http://192.168.95.38:8080/api/auth/register";  // replace with your backend URL
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +77,7 @@ public class SignUpActivity extends AppCompatActivity {
                         // Display error message
                         Toast.makeText(this, "Signup failed. Please try again.", Toast.LENGTH_SHORT).show();
                     }
+
             ) {
                 @Override
                 public byte[] getBody() {
@@ -90,7 +91,7 @@ public class SignUpActivity extends AppCompatActivity {
             };
 
             // Set timeout and retry policy as before
-            int socketTimeout = 30000;  // 30 seconds timeout
+            int socketTimeout = 10000;  // 10 seconds timeout
             RetryPolicy policy = new DefaultRetryPolicy(socketTimeout,
                     DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
                     DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);

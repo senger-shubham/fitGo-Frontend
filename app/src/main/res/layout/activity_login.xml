@@ -13,6 +13,16 @@
         android:gravity="center_horizontal"
         android:padding="24dp">
 
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+        android:indeterminate="true"/>
+        <!-- Initially hidden -->
+
+
         <ImageView
             android:layout_width="120dp"
             android:layout_height="120dp"
